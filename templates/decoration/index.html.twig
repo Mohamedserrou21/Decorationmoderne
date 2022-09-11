@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link
+		rel="icon" type="image/png" href="{{asset('img/lp-png.png')}}">
+		<!-- bootstrap cdn link -->
+		<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+		<!-- aos cdn link -->
+		<link
+		href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+		<!-- custom styles -->
+		<link rel="stylesheet" href="{{asset('css/style.css')}}">
+		<link rel="stylesheet" href="{{asset('css/responsive.css')}}">
+
+		<title>Decoration moderne- Decoration</title>
+	</head>
+
+	<body>
+		<!-- topbar start -->
+		<div class="topbar container-fluid d-flex flex-wrap justify-content-center justify-content-lg-between">
+			<div class="info-topbar mt-2 d-flex flex-wrap justify-content-center justify-content-lg-between">
+				<div class="info-content d-inline-flex">
+					<div class="mt-1">
+						<span class="icon-phone-alt"></span>
+					</div>
+					<p class="phone ms-2">+212-615259424</p>
+				</div>
+
+				<div class="info-content ms-4 d-inline-flex">
+					<div class="mt-1">
+						<span class="icon-envelope"></span>
+					</div>
+					<p class="email ms-2">lahcenlazar17@gmail.com</p>
+				</div>
+			</div>
+
+			<div class="location-topbar ms-3 mt-2 d-flex align-items-center">
+				<p>Fes , Route sefrou 30080</p>
+			</div>
+		</div>
+		<!-- topbar end -->
+
+
+		<!-- header start -->
+		<div
+			class="header">
+
+			<!-- navbar start -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="nav-content container-fluid">
+					<a class="navbar-brand" href="#">
+						<img class="d-inline-block align-top" src="img/lp-png.png" alt="brand-logo" style="width: 164px;height: 64px">
+					</a>
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="main-menu collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="{{path('app_index')}}">Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="{{path('app_about')}}">About</a>
+							</li>
+
+							<li class="nav-item dropdown">
+								<a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+									Nos Services
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li>
+										<a class="dropdown-item" href="{{path('app_teinture')}}">Teinture</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="{{path('app_decoration')}}">Decoration</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{{path('app_gallery')}}">Gallery</a>
+							</li>
+
+						</ul>
+					</div>
+
+					<div class="quote-btn">
+						<a class="nav-link" href="{{path('app_contact_new')}}">Contact Us</a>
+					</div>
+				</div>
+			</nav>
+			<!-- navbar end -->
+		</div>
+		<!-- header end -->
+
+
+		<!-- breadcrumb start -->
+		<div class="container-fluid breadcrumb-area parallax">
+			<div class="container-lg">
+				<div class="title">
+					<h2>Nos Services</h2>
+				</div>
+
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item">
+							<a href="index.html">Home</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a href="interior.html">Nos Services</a>
+						</li>
+						<li class="breadcrumb-item active" aria-current="page">Decoration</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+		<!-- breadcrumb end -->
+
+
+		<!-- services section start -->
+		<div id="services" class="construction-services">
+			<div class="section-title pt-5">
+				<h1 class="text-center">
+					<span>DECORATION</span>
+					Services</h1>
+				<p class="text-center">NOS PROPOSITION</p>
+			</div>
+
+			<div class="container-lg pt-4 pb-5 d-flex flex-wrap justify-content-center justify-content-lg-start" data-aos="fade-up">
+				<div class="card mb-3 ms-2 me-2 flex-lg-grow-1">
+					<img src="./img/gabsse.jpg" alt="">
+
+					<div class="card-text-content">
+						<p>Decoration platre</p>
+					</div>
+				</div>
+
+				<div class="card mb-3 ms-2 me-2 flex-lg-grow-1">
+					<img src="./img/construction/const1.jpg" alt="">
+
+					<div class="card-text-content">
+						<p>Decoration interieur</p>
+					</div>
+				</div>
+
+				<div class="card mb-3 ms-2 me-2 flex-lg-grow-1">
+					<img src="./img/construction/const2.jpg" alt="">
+
+					<div class="card-text-content">
+						<p>Decoration Traditionnel</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<!-- services section end -->
+
+
+		<!-- service gallery start -->
+		<div class="container-fluid service-gallery mt-2">
+			<div class="section-title pt-5 pb-5">
+				<h1>Nos
+					<span>Realisation</span>
+				</h1>
+			</div>
+
+			<div class="service-gallery-wrapper mt-4">
+				<div class="service-gallery-content">
+					<img src="./img/exclusive/const3.jpg" alt="">
+
+					<div class="preview-details">
+						<p class="preview-title">Decoration traditionnel</p>
+					</div>
+
+					<div class="service-project-title-area">
+						<p class="service-project-title">Decoration Traditionnel</p>
+						<p class="service-project-status"></p>
+					</div>
+				</div>
+
+				<div class="service-gallery-content">
+					<img src="./img/exclusive/const2.jpg" alt="">
+
+					<div class="preview-details">
+						<p class="preview-title">Decoration Moderne</p>
+					</div>
+
+					<div class="service-project-title-area">
+						<p class="service-project-title">Decoration Moderne</p>
+						<p class="service-project-status"></p>
+					</div>
+				</div>
+
+				<div class="service-gallery-content">
+					<img src="./img/exclusive/const1.jpg" alt="">
+
+					<div class="preview-details">
+						<p class="preview-title">Decoration d'interieur</p>
+					</div>
+
+					<div class="service-project-title-area">
+						<p class="service-project-title">Decoration d'interieur</p>
+						<p class="service-project-status"></p>
+					</div>
+				</div>
+
+				<div class="service-gallery-content">
+					<img src="./img/exclusive/const4.jpg" alt="">
+
+					<div class="preview-details">
+						<p class="preview-title">Teinture & decoration moderne
+						</p>
+					</div>
+
+					<div class="service-project-title-area">
+						<p class="service-project-title">Teinture & decoration moderne</p>
+						<p class="service-project-status"></p>
+					</div>
+				</div>
+
+				<div class="service-gallery-content">
+					<img src="./img/gabsse.jpg" alt="">
+
+					<div class="preview-details">
+						<p class="preview-title">Decoration platre
+						</p>
+					</div>
+
+					<div class="service-project-title-area">
+						<p class="service-project-title">Decoration platre</p>
+						<p class="service-project-status"></p>
+					</div>
+				</div>
+
+				<div class="service-gallery-content">
+					<img src="./img/exclusive/const6.jpg" alt="">
+
+					<div class="preview-details">
+						<p class="preview-title">Decoration Traditionnel</p>
+					</div>
+
+					<div class="service-project-title-area">
+						<p class="service-project-title">Decoration Traditionnel</p>
+						<p class="service-project-status"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- service gallery end -->
+
+
+		<!-- footer section start -->
+		<div class="footer">
+			<div class="footer-content container-xxl">
+				<div class="footer-col footer-col1">
+					<p class="interiorx">
+						<strong>Decoration<span>
+								Moderne</span>
+						</strong>
+					</p>
+					<p>En tant que société de teinture, de décoration , DECORATION MODERNE a pu s’imposer sur le marché de
+																																																																																																																																																																																																																																																																																				                    la décoration intérieure de maison au Maroc à travers ses particularités dans le traitement soigneux
+																																																																																																																																																																																																																																																																																				                    qu’accorde aux besoins de sa clientèle.
+																																																																																																																																																																																																																																																																																				
+																																																																																																																																																																																																																																																																																				                    Ayant un savoir faire pointu dans la décoration intérieure et la teinture de tout espace intérieur
+																																																																																																																																																																																																																																																																																				                    (maison ou entreprise), l’agence ne peut que se féliciter de ses réalisations constituant des
+																																																																																																																																																																																																																																																																																				                    challenges à concrétiser pour le plaisir de ses clients.</p>
+					<div class="social-links">
+						<div class="social-link">
+							<span class="icon-facebook-f"></span>
+						</div>
+
+						<div class="social-link">
+							<span class="icon-twitter"></span>
+						</div>
+
+						<div class="social-link">
+							<span class="icon-linkedin-in"></span>
+						</div>
+
+						<div class="social-link">
+							<span class="icon-telegram-plane"></span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="footer-col location">
+					<p class="footer-col-title">
+						<strong>Contact Us</strong>
+					</p>
+					<p>Fes maroc 30080</p>
+					<div class="address">
+						<p>
+							<strong>Phone:
+							</strong>
+							<span>+212-615259424</span>
+						</p>
+						<p>
+							<strong>Email:
+							</strong>
+							<span>lahcenlazar17@gmail.com</span>
+						</p>
+						<p>
+							<strong>Web:
+							</strong>
+							<a href="#">www.lahcenlazzar.com</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<footer class="copyright container-xxl">
+				<p>Copyright &copy; 2022 - All Rights Reserved -
+					<a href="https://www.youtube.com/channel/UCr4TC9YxsDZwzwIxnZOVlBw">plain of digital</a>
+				</p>
+			</footer>
+		</div>
+		<!-- footer section end -->
+
+
+		<!-- bootstrap cdn link -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+		<!-- aos cdn link -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<!-- custom js link -->
+		<script src="{{asset('js/script.js')}}"></script>
+	</body>
+
+</html>
